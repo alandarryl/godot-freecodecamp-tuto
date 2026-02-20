@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://cljx8aekhl2un"]
+
+[node name="world" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 404.0
+offset_top = 261.0
+offset_right = 706.0
+offset_bottom = 384.0
+text = "welcome in the world scene"
+horizontal_alignment = 1
+vertical_alignment = 1
