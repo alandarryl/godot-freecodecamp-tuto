@@ -1,12 +1,15 @@
-[gd_scene format=3 uid="uid://cljx8aekhl2un"]
+[gd_scene load_steps=3 format=3 uid="uid://cljx8aekhl2un"]
+
+[ext_resource type="PackedScene" uid="uid://716f7a17ej1p" path="res://scenes/player.tscn" id="1_wsmim"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_mb4ou"]
 
 [node name="world" type="Node2D"]
 
-[node name="Label" type="Label" parent="."]
-offset_left = 404.0
-offset_top = 261.0
-offset_right = 706.0
-offset_bottom = 384.0
-text = "welcome in the world scene"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(526, 470)
+shape = SubResource("WorldBoundaryShape2D_mb4ou")
+
+[node name="player" parent="." instance=ExtResource("1_wsmim")]
