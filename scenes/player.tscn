@@ -16,3 +16,10 @@ texture = ExtResource("1_tq62h")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(211, 118)
 shape = SubResource("CircleShape2D_p0iw5")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+root_node = NodePath("../AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
